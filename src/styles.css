@@ -1,1 +1,97 @@
-/* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color: var(--clr-light);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Custom props */
+:root {
+    --ff-primary: 'Bellefair', serif;
+    --ff-secondary: 'Barlow Condensed', sans-serif;
+
+    --fs-h1: 150px;
+    --fs-h2: 100px;
+    --fs-h3: 56px;
+    --fs-h4: 32px;
+    --fs-h5: 28px;
+    --fs-sh2: 14px;
+    --fs-nav: 16px;
+
+    --clr-light: hsl(0, 0%, 100%);
+    --clr-dark: hsl(230, 35%, 7%);
+    --clr-accent: hsl(231, 77%, 90%);
+    --clr-gray: gray;
+}
+
+h1,
+h2,
+h3,
+h4,
+.subheading1 {
+    font-family: var(--ff-primary);
+} 
+
+h5,
+.subheading2,
+header,
+p {
+    font-family: var(--ff-secondary);
+}
+
+h1 {
+    font-size: var(--fs-h1);
+    margin: 0;
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+h4 {
+    font-size: var(--fs-h4);
+}
+
+h5 {
+    font-size: var(--fs-h5);
+    letter-spacing: 4.75px;
+}
+
+.subheading1 {
+    font-size: var(--fs-h5);
+}
+
+.subheading2 {
+    font-size: var(--fs-sh2);
+    letter-spacing: 2.35px;
+}
+
+header,
+p {
+    font-size: var(--fs-nav);
+    letter-spacing: 2.7px;
+}
+
+p {
+    line-height: 2;
+}

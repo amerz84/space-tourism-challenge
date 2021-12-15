@@ -1,0 +1,40 @@
+body {
+    background-image: url("src\assets\home\background-home-desktop.jpg");
+    background-size: cover;
+    padding: 0 9em 10em 9em;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 25em;
+    height: 100%;
+    overflow: visible;
+}
+
+.content-text {
+    justify-self: start;
+    align-self: end;
+}
+
+.content-button {
+    justify-self: center;
+    align-self: end;
+    padding: 3.5em;
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    border-radius: 50%;
+    border: 0px solid rgba(80,80,80,0.9);
+    margin-bottom: 0px;
+    transition: border-width 25ms ease-in-out,
+                margin-bottom 25ms ease-in-out;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.content-button:hover {
+    border-width: 4em;
+    margin-bottom: -4em;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
