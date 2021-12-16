@@ -3,6 +3,30 @@
     <span class="divider">
         <hr>
     </span>
+    <span *ngIf="isMobile" class="hamburger-menu" id="nav-menu">
+        <span *ngIf="isOpened; else navClosed">
+            <img src="../../assets/shared/icon-close.svg" class="hamburger-menu-icon" (click)="toggleNavMenu()" alt=""> 
+            <div class="nav-links">
+                <div class="link-container">
+                    <a class="nav-link" (click)="toggleNavMenu()" routerLinkActive="active current" routerLink="/" [routerLinkActiveOptions]="{ exact: true }">
+                        <strong>00</strong>&nbsp;&nbsp;HOME
+                    </a>
+                    <a class="nav-link" (click)="toggleNavMenu()" routerLinkActive="active current" routerLink="/destination/1">
+                        <strong>01</strong>&nbsp;&nbsp;DESTINATION
+                    </a>
+                    <a class="nav-link" (click)="toggleNavMenu()" routerLinkActive="active current" routerLink="/crew">
+                        <strong>02</strong>&nbsp;&nbsp;CREW
+                    </a>
+                    <a class="nav-link" (click)="toggleNavMenu()" routerLinkActive="active current" routerLink="/technology">
+                        <strong>03</strong>&nbsp;&nbsp;TECHNOLOGY
+                    </a>
+                </div> 
+            </div>      
+        </span>
+        <ng-template #navClosed>
+            <img src="../../assets/shared/icon-hamburger.svg" class="hamburger-menu-icon" (click)="toggleNavMenu()" alt="">
+        </ng-template>        
+    </span>
     <span class="nav-links">
         <a class="nav-link" routerLinkActive="active current" routerLink="/" [routerLinkActiveOptions]="{ exact: true }">
             <strong>00</strong>&nbsp;&nbsp;HOME

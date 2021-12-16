@@ -26,8 +26,6 @@ body {
     border-radius: 50%;
     border: 0px solid rgba(80,80,80,0.9);
     margin-bottom: 0px;
-    transition: border-width 25ms ease-in-out,
-                margin-bottom 25ms ease-in-out;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
@@ -37,4 +35,31 @@ body {
     margin-bottom: -4em;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
+}
+
+/* Tablet */
+@media (max-width:768px) {
+    body {
+        background-image: url("src\assets\home\background-home-tablet.jpg");
+    }    
+}
+
+/* Mobile */
+
+@media (max-width:375px) {
+    body {
+        background-image: url("src\assets\home\background-home-mobile.jpg");
+        padding: 0;
+    } 
+
+    .content-container {
+        padding: 5rem 1.5rem 3rem 1.5rem;
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
+        text-align: center;
+    }
+
+    .content-button {
+        padding: 2em;
+    }
 }

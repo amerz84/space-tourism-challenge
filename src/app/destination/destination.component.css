@@ -1,0 +1,51 @@
+body {
+    background-image: url("src\assets\destination\background-destination-desktop.jpg");
+    background-size: cover;
+    padding: 0 9em 10em 9em;
+}
+
+.body-title-number {
+    color: var(--clr-gray);
+    padding-right: 0.5em;
+}
+
+.destination-body {
+    display: flex;
+}
+
+.destination-body-title {
+    padding: 15em 0 2.5em 0;
+}
+
+.destination-nav-link {
+    color: var(--clr-light);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    margin-right: 1.5em;
+}
+
+.destination-nav-link.active {
+    border-bottom: 3px solid var(--clr-light);
+}
+
+.destination-nav-link:hover {
+    border-bottom: 3px solid var(--clr-gray);
+}
+
+/* Tablet */
+@media (max-width:768px) {
+    body {
+        background-image: url("src\assets\destination\background-destination-tablet.jpg");
+        padding: 2em;
+    }    
+
+    .destination-body {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:375px) {
+    body {
+        background-image: url("src\assets\destination\background-destination-mobile.jpg");
+    } 
+}

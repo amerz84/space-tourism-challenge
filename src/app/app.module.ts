@@ -9,6 +9,9 @@ import { DestinationComponent } from './destination/destination.component';
 import { CrewComponent } from './crew/crew.component';
 import { TechnologyComponent } from './technology/technology.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -24,11 +27,14 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppRoutingModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: 'destination/:itemid', component: DestinationComponent },
       { path: 'destination', component: DestinationComponent },
       { path: 'crew', component: CrewComponent },
       { path: 'technology', component: TechnologyComponent, },
       { path: '**', component: HomeComponent }
-    ])
+    ]),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore()),
   ],
   providers: [],
   bootstrap: [AppComponent]

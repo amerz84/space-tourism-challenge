@@ -21,18 +21,79 @@ img {
     max-width: 100%;
 }
 
+@media (max-width:375px) {
+    p {
+        line-height: 1.5625rem;
+    }
+
+    h1 {
+        --fs-h1: 5.5rem;
+    }
+
+    h2 {
+        --fs-h2: 3.5rem;
+    }
+
+    h3 {
+        --fs-h3: 1.5rem;
+    }
+
+    h4 {
+        --fs-h4: 1.25rem;
+        letter-spacing: 1.25px;
+    }
+
+    h5 {
+        --fs-h5: 1rem;
+        letter-spacing: 2.7px;
+    }
+}
+
+@media (max-width:768px) and (min-width:376px) {
+    p {
+        line-height: 1.75rem;
+    } 
+
+    h1 {
+        --fs-h1: 5.5rem;
+    }
+
+    h5 {
+        --fs-h5: 1.75rem;
+    }
+}
+
+@media screen and (min-width:769px) {
+    h1 {
+        --fs-h1: 9.375rem;
+    }
+    
+    h2 {
+        --fs-h2: 6.25rem;
+    }
+
+    h3 {
+        --fs-h3: 3.5rem;
+    }
+        
+    h4 {
+        --fs-h4: 2rem;
+    }   
+    
+    h5 {
+        --fs-h5: 1.75rem;
+        letter-spacing: 4.75px;
+    }
+
+    header, p, nav a {
+        letter-spacing: 2.7px;
+    }
+}                           
+
 /* Custom props */
 :root {
     --ff-primary: 'Bellefair', serif;
     --ff-secondary: 'Barlow Condensed', sans-serif;
-
-    --fs-h1: 150px;
-    --fs-h2: 100px;
-    --fs-h3: 56px;
-    --fs-h4: 32px;
-    --fs-h5: 28px;
-    --fs-sh2: 14px;
-    --fs-nav: 16px;
 
     --clr-light: hsl(0, 0%, 100%);
     --clr-dark: hsl(230, 35%, 7%);
@@ -51,7 +112,8 @@ h4,
 h5,
 .subheading2,
 header,
-p {
+p,
+nav a {
     font-family: var(--ff-secondary);
 }
 
@@ -74,22 +136,24 @@ h4 {
 
 h5 {
     font-size: var(--fs-h5);
-    letter-spacing: 4.75px;
 }
 
 .subheading1 {
+    --fs-h5: 1rem;
     font-size: var(--fs-h5);
 }
 
 .subheading2 {
+    --fs-sh2: 0.875rem;
     font-size: var(--fs-sh2);
     letter-spacing: 2.35px;
 }
 
 header,
-p {
+p,
+nav a {
+    --fs-nav: 1rem;
     font-size: var(--fs-nav);
-    letter-spacing: 2.7px;
 }
 
 p {

@@ -47,3 +47,57 @@ hr {
     justify-content: space-between;
     align-items: center;
 }
+
+@media (max-width:768px) and (min-width:376px) {
+    .divider {
+        display:none;
+    }
+}
+
+@media (max-width:375px) {
+    .divider {
+        display:none;
+    }
+
+    .nav-links {
+        display:none;
+        right: 0;
+        top: 0;
+        padding: 0;
+        height: 100vh;
+        width: 66vw;
+        position: absolute;
+    }
+
+    .top-navbar {
+        padding: 1.5em;
+        margin: 0;
+    }
+
+    .navbar-img {
+        width: 2.5rem;
+    }
+
+    .hamburger-menu-icon {
+        position: relative;
+        z-index: 100;
+    }
+
+    .hamburger-menu.opened span .nav-links{
+        display: grid;
+    }
+
+    .link-container {
+        padding: 7em 0 0 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-link {
+        margin-left: 1em;
+    }
+
+    .nav-link.active {
+        border-bottom: none;
+    }
+}

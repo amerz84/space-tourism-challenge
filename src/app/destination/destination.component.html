@@ -1,1 +1,28 @@
-<p>destination works!</p>
+<body>
+    <div class="destination-body-title">
+        <h5>
+            <span class="body-title-number">01</span>
+            PICK YOUR DESTINATION
+        </h5>
+    </div>
+    <section *ngIf="destination$" class="destination-body">
+        <img src="{{ destination$.image_url }}" alt="">
+        <div class="destination-body-content">
+            <nav class="destination-nav">
+                <a class="destination-nav-link" routerLinkActive="active current" routerLink="/destination/1" [routerLinkActiveOptions]="{ exact: true }">
+                    MOON
+                </a>
+                <a class="destination-nav-link" routerLinkActive="active current" routerLink="/destination/2">
+                    MARS
+                </a>
+                <a class="destination-nav-link" routerLinkActive="active current" routerLink="/destination/3">
+                    EUROPA
+                </a>
+                <a class="destination-nav-link" routerLinkActive="active current" routerLink="/destination/4">
+                    TITAN
+                </a>
+            </nav>
+        </div>
+    </section>
+</body>
+
