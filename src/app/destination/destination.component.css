@@ -4,6 +4,7 @@ body {
     padding: 0 9em 10em 9em;
 }
 
+/* Page Content */
 .body-title-number {
     color: var(--clr-gray);
     padding-right: 0.5em;
@@ -11,17 +12,60 @@ body {
 
 .destination-body {
     display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 0 5em;
+}
+
+/* Content Image */
+.destination-img {
+    width: 35%;
+}
+
+/* Content Text */
+.destination-body-content {
+    text-align: start;
+    width: 35%;
 }
 
 .destination-body-title {
-    padding: 15em 0 2.5em 0;
+    padding: 12em 0 1.5em 0;
 }
 
+hr {
+    margin: 2em 0 1.5em 0;
+}
+
+.destination-stats {
+    display: grid;
+    grid-template-areas: "distance-header travel-header"
+                        "distance-value travel-value";
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.distance-header {
+    grid-area: distance-header;
+}
+
+.destination-distance {
+    grid-area: distance-value;
+}
+
+.travel-header {
+    grid-area: travel-header;
+}
+
+.destination-travel-time {
+    grid-area: travel-value;
+}
+
+/* Inner Nav */
 .destination-nav-link {
     color: var(--clr-light);
     text-decoration: none;
     border-bottom: 2px solid transparent;
     margin-right: 1.5em;
+    padding-bottom: 0.75em;
 }
 
 .destination-nav-link.active {
@@ -31,6 +75,8 @@ body {
 .destination-nav-link:hover {
     border-bottom: 3px solid var(--clr-gray);
 }
+
+
 
 /* Tablet */
 @media (max-width:768px) {

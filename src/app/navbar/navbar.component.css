@@ -3,9 +3,6 @@
 }
 
 hr {
-    border: none;
-    height: 1px;
-    background-color: gray;
     left: 6%;
     position: relative;
     z-index: 2;

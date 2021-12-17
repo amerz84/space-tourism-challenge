@@ -6,10 +6,12 @@
         </h5>
     </div>
     <section *ngIf="destination$" class="destination-body">
-        <img src="{{ destination$.image_url }}" alt="">
+        <div *ngIf="destination$.image_url" class="destination-img">
+            <img src="{{ destination$.image_url }}" alt="">
+        </div>
         <div class="destination-body-content">
             <nav class="destination-nav">
-                <a class="destination-nav-link" routerLinkActive="active current" routerLink="/destination/1" [routerLinkActiveOptions]="{ exact: true }">
+                <a class="destination-nav-link" routerLinkActive="active current" routerLink="/destination/1">
                     MOON
                 </a>
                 <a class="destination-nav-link" routerLinkActive="active current" routerLink="/destination/2">
@@ -22,6 +24,15 @@
                     TITAN
                 </a>
             </nav>
+            <h2>{{ destination$.name }}</h2>
+            <p> {{ destination$.description }}</p>
+            <hr>
+            <div class="destination-stats">
+                <div class="distance-header subheading2">AVG. DISTANCE</div>
+                <div class="destination-distance subheading1">{{ destination$.distance }}</div>
+                <div class="travel-header subheading2">EST. TRAVEL TIME</div>
+                <div class="destination-travel-time subheading1">{{ destination$.travel_time }}</div>
+            </div>
         </div>
     </section>
 </body>

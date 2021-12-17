@@ -21,6 +21,12 @@ img {
     max-width: 100%;
 }
 
+hr {
+    border: none;
+    height: 1px;
+    background-color: gray;
+}
+
 @media (max-width:375px) {
     p {
         line-height: 1.5625rem;
@@ -124,6 +130,7 @@ h1 {
 
 h2 {
     font-size: var(--fs-h2);
+    margin: 2rem 0 0 0;
 }
 
 h3 {
@@ -139,8 +146,9 @@ h5 {
 }
 
 .subheading1 {
-    --fs-h5: 1rem;
+    --fs-h5: 1.75rem;
     font-size: var(--fs-h5);
+    margin-top: 0.5em;
 }
 
 .subheading2 {
@@ -150,12 +158,12 @@ h5 {
 }
 
 header,
-p,
 nav a {
     --fs-nav: 1rem;
     font-size: var(--fs-nav);
 }
 
 p {
+    font-size: 1.25rem;
     line-height: 2;
 }

@@ -21,6 +21,7 @@ body {
     justify-self: center;
     align-self: end;
     padding: 3.5em;
+    text-decoration: none;
     background: var(--clr-light);
     color: var(--clr-dark);
     border-radius: 50%;
