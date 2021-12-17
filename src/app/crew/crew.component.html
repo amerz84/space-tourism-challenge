@@ -9,9 +9,11 @@
         <div class="crew-body">
             <div class="crew-body-content">
                 <div class="crew-body-content-text">
-                    <h4>{{ crew$.member_title }}</h4>
-                    <h3>{{ crew$.name }}</h3>
-                    <p>{{ crew$.description }}</p>
+                    <div class="crew-body-content-text-wrapper">
+                        <h4>{{ crew$.member_title }}</h4>
+                        <h3>{{ crew$.name }}</h3>
+                        <p>{{ crew$.description }}</p>
+                    </div>
                 </div>
                 <div class="crew-body-content-nav">
                     <a routerLinkActive="active current" routerLink="/crew/1" class="crew-nav-link">
