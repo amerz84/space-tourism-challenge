@@ -10,7 +10,6 @@ import { ActivatedRoute } from '@angular/router';
 export class DestinationComponent implements OnInit {
   destinationId!: string;
   destination$!: DocumentData;
-  firstLink!: Element;
   firestoreRef!: DocumentReference<DocumentData> | null;
 
   constructor(private route: ActivatedRoute, private firestore: Firestore) { }
@@ -27,10 +26,6 @@ export class DestinationComponent implements OnInit {
       else this.destinationId = '1';
       this.setFirestoreData();
     });
-
-    
-
-
   }
 
   setFirestoreData() {

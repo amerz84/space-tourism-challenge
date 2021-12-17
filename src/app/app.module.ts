@@ -29,7 +29,9 @@ import { environment } from 'src/environments/environment';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'destination/:itemid', component: DestinationComponent },
       { path: 'destination', component: DestinationComponent },
+      { path: 'crew/:itemid', component: CrewComponent },
       { path: 'crew', component: CrewComponent },
+      { path: 'technology/:itemid', component: TechnologyComponent, },
       { path: 'technology', component: TechnologyComponent, },
       { path: '**', component: HomeComponent }
     ]),

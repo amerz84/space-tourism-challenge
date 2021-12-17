@@ -19,6 +19,7 @@ body {
 img {
     display: block;
     max-width: 100%;
+    margin: auto;
 }
 
 hr {
@@ -104,7 +105,7 @@ hr {
     --clr-light: hsl(0, 0%, 100%);
     --clr-dark: hsl(230, 35%, 7%);
     --clr-accent: hsl(231, 77%, 90%);
-    --clr-gray: gray;
+    --clr-gray: hsla(0, 0%, 100%, 0.25);
 }
 
 h1,
@@ -135,10 +136,12 @@ h2 {
 
 h3 {
     font-size: var(--fs-h3);
+    font-weight: 400;
 }
 
 h4 {
     font-size: var(--fs-h4);
+    font-weight: 400;
 }
 
 h5 {

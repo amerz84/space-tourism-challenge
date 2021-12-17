@@ -1,1 +1,36 @@
-<p>crew works!</p>
+<body>
+    <div class="crew-body-title">
+        <h5>
+            <span class="body-title-number">02</span>
+            MEET YOUR CREW
+        </h5>
+    </div>
+    <section *ngIf="crew$" class="crew-section">
+        <div class="crew-body">
+            <div class="crew-body-content">
+                <div class="crew-body-content-text">
+                    <h4>{{ crew$.member_title }}</h4>
+                    <h3>{{ crew$.name }}</h3>
+                    <p>{{ crew$.description }}</p>
+                </div>
+                <div class="crew-body-content-nav">
+                    <a routerLinkActive="active current" routerLink="/crew/1" class="crew-nav-link">
+                        <div class="nav-link-icon"></div>
+                    </a>
+                    <a routerLinkActive="active current" routerLink="/crew/2" class="crew-nav-link">
+                        <div class="nav-link-icon"></div>
+                    </a>
+                    <a routerLinkActive="active current" routerLink="/crew/3" class="crew-nav-link">
+                        <div class="nav-link-icon"></div>
+                    </a>
+                    <a routerLinkActive="active current" routerLink="/crew/4" class="crew-nav-link">
+                        <div class="nav-link-icon"></div>
+                    </a>
+                </div>
+            </div>
+            <div *ngIf="crew$.image_url" class="crew-img">
+                <img src="{{ crew$.image_url }}" alt="">
+            </div>
+        </div>
+    </section>
+</body>

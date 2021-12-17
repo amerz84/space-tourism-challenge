@@ -10,6 +10,10 @@ body {
     padding-right: 0.5em;
 }
 
+.destination-body-title {
+    padding: 12em 0 1.5em 0;
+}
+
 .destination-body {
     display: flex;
     align-items: flex-start;
@@ -26,10 +30,6 @@ body {
 .destination-body-content {
     text-align: start;
     width: 35%;
-}
-
-.destination-body-title {
-    padding: 12em 0 1.5em 0;
 }
 
 hr {
