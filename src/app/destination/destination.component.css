@@ -88,10 +88,54 @@ hr {
     .destination-body {
         flex-direction: column;
     }
+
+    .destination-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .destination-nav-link {
+        margin: 0.5em 0;
+        padding: 0.5em 0;
+    }
+
+    h2 {
+        margin: 1rem 0;
+    }
 }
 
 @media (max-width:375px) {
     body {
         background-image: url("src\assets\destination\background-destination-mobile.jpg");
+        text-align: center;
     } 
+
+    .destination-body {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .destination-body-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .destination-body-title {
+        padding: 1.5em 0 0 0;
+    }
+
+    .destination-img {
+        width: 60%;
+    }
+
+    .destination-stats {
+        display: block;
+    }
+
+    .subheading1 {
+        margin: 0.25em 0 0.75em 0;
+    }
 }

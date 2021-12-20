@@ -28,8 +28,9 @@ hr {
     background-color: gray;
 }
 
-@media (max-width:375px) {
+@media (max-width:376px) {
     p {
+        font-size: 1rem;
         line-height: 1.5625rem;
     }
 
@@ -94,6 +95,11 @@ hr {
 
     header, p, nav a {
         letter-spacing: 2.7px;
+    }
+
+    p {
+        font-size: 1.25rem;
+        line-height: 2;
     }
 }                           
 
@@ -164,9 +170,4 @@ header,
 nav a {
     --fs-nav: 1rem;
     font-size: var(--fs-nav);
-}
-
-p {
-    font-size: 1.25rem;
-    line-height: 2;
 }
