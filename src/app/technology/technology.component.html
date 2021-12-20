@@ -1,1 +1,36 @@
-<p>technology works!</p>
+<body>
+    <div class="technology-body-title">
+        <h5>
+            <span class="body-title-number">03</span>
+            SPACE LAUNCH 101
+        </h5>
+    </div>
+    <section *ngIf="technology$">
+        <div class="technology-body">
+            <div class="technology-nav">
+                <a routerLinkActive="active current" routerLink="/technology/1" class="technology-nav-link">
+                    <div class="nav-link-icon subheading1">1</div>
+                </a>
+                <a routerLinkActive="active current" routerLink="/technology/2" class="technology-nav-link">
+                    <div class="nav-link-icon subheading1">2</div>
+                </a>
+                <a routerLinkActive="active current" routerLink="/technology/3" class="technology-nav-link">
+                    <div class="nav-link-icon subheading1">3</div>
+                </a>
+            </div>
+            <div class="technology-body-text">
+                <div class="subheading2">THE TERMINOLOGY...</div>
+                <h3 class="technology-body-text-title">{{ technology$.title }}</h3>
+                <p>{{ technology$.description }}</p>
+            </div>
+            <div *ngIf="isMobile; else Desktop" class="technology-img">
+                <img src="{{ technology$.image_url_mobile }}" alt="">                
+            </div>
+            <ng-template #Desktop>
+                <div class="technology-img">
+                    <img src="{{ technology$.image_url }}" alt="">
+                </div>                
+            </ng-template>
+        </div>
+    </section>
+</body>
