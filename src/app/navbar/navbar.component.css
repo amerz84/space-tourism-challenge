@@ -49,6 +49,32 @@ hr {
     .divider {
         display:none;
     }
+
+    .top-navbar {
+        margin: 0;
+    }
+
+    .nav-links {
+        display: flex;
+        padding: 2.5em 0 0 0;
+        justify-content: space-around;
+    }
+
+    .nav-link {
+        margin: 0 0 0 2.5em;
+    }
+
+    .nav-link:last-of-type {
+        margin-right: 2.5em;
+    }
+
+    .navbar-img {
+        margin: 0;
+    }
+
+    strong {
+        display: none;
+    }
 }
 
 @media (max-width:375px) {
