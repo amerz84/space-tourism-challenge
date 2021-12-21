@@ -47,7 +47,7 @@ hr {
     }
 
     h4 {
-        --fs-h4: 1.25rem;
+        --fs-h4: 1rem;
         letter-spacing: 1.25px;
     }
 
@@ -133,11 +133,13 @@ nav a {
 h1 {
     font-size: var(--fs-h1);
     margin: 0;
+    font-weight: 400;
 }
 
 h2 {
     font-size: var(--fs-h2);
     margin: 2rem 0 0 0;
+    font-weight: 400;
 }
 
 h3 {
