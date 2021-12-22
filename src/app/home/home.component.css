@@ -42,7 +42,23 @@ body {
 @media (max-width:768px) {
     body {
         background-image: url("src\assets\home\background-home-tablet.jpg");
-    }    
+        padding: 0 9em 0 9em;
+    }   
+    
+    .content-container {
+        padding: 12rem 1.5rem 3rem 1.5rem;
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
+        text-align: center;
+    }
+
+    .content-button {
+        margin-bottom: 4em;
+    }
+
+    .content-button:hover {
+        margin-bottom: 0;
+    }
 }
 
 /* Mobile */
@@ -52,13 +68,6 @@ body {
         background-image: url("src\assets\home\background-home-mobile.jpg");
         padding: 0;
     } 
-
-    .content-container {
-        padding: 5rem 1.5rem 3rem 1.5rem;
-        grid-template-columns: none;
-        grid-template-rows: repeat(2, 1fr);
-        text-align: center;
-    }
 
     .content-button {
         padding: 2em;

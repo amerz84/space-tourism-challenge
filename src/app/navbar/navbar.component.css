@@ -90,6 +90,7 @@ hr {
         height: 100vh;
         width: 66vw;
         position: absolute;
+        z-index: 2;
     }
 
     .top-navbar {

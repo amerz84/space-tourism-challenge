@@ -83,16 +83,32 @@ hr {
     body {
         background-image: url("src\assets\destination\background-destination-tablet.jpg");
         padding: 2em;
-    }    
+    }   
+    
+    .destination-body-title {
+        padding: 4em 0 1.5em 1em;
+    }
 
     .destination-body {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .destination-body-content {
+        width: 75%;
+        text-align: center;
+    }
+
+    .destination-img {
+        width: 45%;
     }
 
     .destination-nav {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        margin: 2rem auto;
+        width: 66%;
     }
 
     .destination-nav-link {
@@ -102,6 +118,14 @@ hr {
 
     h2 {
         margin: 1rem 0;
+    }
+
+    hr {
+        margin-top: 3em;
+    }
+
+    p {
+        margin: auto -3em;
     }
 }
 
@@ -131,11 +155,19 @@ hr {
         width: 60%;
     }
 
+    .destination-nav {
+        margin: 1rem auto;
+    }
+
     .destination-stats {
         display: block;
     }
 
     .subheading1 {
         margin: 0.25em 0 0.75em 0;
+    }
+
+    p {
+        margin: auto;
     }
 }

@@ -77,7 +77,38 @@ body {
         padding: 2em;
     }  
 
+    .technology-body-title {
+        padding: 4em 0 1.5em 1em;
+    }
 
+    .technology-body {
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .technology-body-text {
+        width: 66%;
+        position: fixed;
+        top: 70%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .technology-nav {
+        flex-direction: row;
+        position: fixed;
+        bottom: 35%;        
+    }
+
+    .technology-nav-link {
+        margin: 0.5em;
+    }
+
+    .technology-img {
+        position: fixed;
+        bottom: 48%;
+    }
 }
 
 /* Mobile */
@@ -87,32 +118,24 @@ body {
         text-align: center;
     } 
 
-    .technology-body {
-        justify-content: center;
-    }
-
     .technology-body-title {
         padding: 1.5em 0 0 0;
     }
 
     .technology-nav {
         flex-direction: row;
-        position: fixed;
         bottom: 48%;
         justify-content: space-between;
         width: 50%;
     }
 
     .technology-img {
-        position: fixed;
         bottom: 63%;
     }
 
     .technology-body-text {
         width: 90%;
-        position: fixed;
-        bottom: 20%;
-        margin: 0;
+        top: 60%;
     }
 
     .technology-nav-link {
